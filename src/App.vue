@@ -3,7 +3,7 @@
     <v-header></v-header>
     <div class="tab">
       <div class="tab-item">
-        <router-link to="/">商品</router-link>
+        <router-link to="/goods">商品</router-link>
       </div>
       <div class="tab-item">
         <router-link to="/ratings">评论</router-link>
@@ -39,5 +39,10 @@
       .tab-item
         flex:1
         text-align :center
-
+        & > a
+          display: block
+          font-size: 14px
+          color: #4d555d
+          &.active
+            color:rgb(240,20,20)
 </style>

@@ -10,6 +10,10 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: 'goods'
+    },
+    {
+      path: '/goods',
       name: 'goods',
       component: goods
     },
@@ -24,5 +28,6 @@ export default new Router({
       component: ratings
     }
   ],
-  mode: 'history'
+  mode: 'history',
+  linkActiveClass: 'active'
 });
